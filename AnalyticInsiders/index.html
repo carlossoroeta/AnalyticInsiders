@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytic Insiders</title>
+    <link rel="shortcut icon" href="img/AnalyticInsiders.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="sidenav">
+        <div class="bar-section" onclick="Mostrar('s0')" >DASHBOARD<img src="img/monitor.png "style="width: 64px"></img></div>
+        <div class="bar-section" onclick="Mostrar('s1')">SHOPMAP<img src="img/map.png"style="width: 64px"></img></div>
+        <div class="bar-section" onclick="Mostrar('s2')">REPORT<img src="img/report.png"style="width: 64px"></img></div>
+        <div class="bar-section" onclick="Mostrar('s3')">REMINDERS<img src="img/email.png"style="width: 64px"></img></div>
+    </div>  
+    <div class="container">
+        <div class="section" id="s0">
+            <h2 class="title">DASHBOARD</h2>
+                <div class="Dashboard">           
+                    <div class="CustomerEvolution" id="chart_div1" ></div>
+                    <div class="CustomerAge" id="piechart" ></div>
+                    <div class="CustomerProvenance" id="chart_div2" ></div>
+                </div>
+        </div>  
+        <div class="section" id="s1">
+            <h2 class="title" >SHOPMAP</h2>
+            <table class="section-content" >
+                <tr>
+                    <th>Corridor 1</th>
+                    <th>Corridor 2</th>
+                    <th>Corridor 3</th>
+                    <th>Corridor 4</th>
+                    <th>Corridor 5</th>
+                    <th>Corridor 6</th>
+                </tr>
+                <tr class="fila">
+                    <td class="col red">120%</td>
+                    <td class="col red">115%</td>
+                    <td class="col red">100%</td>
+                    <td class="col red">81%</td>
+                    <td class="col red">75%</td>
+                    <td class="col red">70%</td>
+                </tr>
+                <tr class="fila">
+                    <td class="col red">121%</td>
+                    <td class="col red">115%</td>
+                    <td class="col red">115%</td>
+                    <td class="col red">81%</td>
+                    <td class="col ambar">80%</td>
+                    <td class="col ambar">80%</td>
+                </tr>
+                <tr class="fila">
+                    <td class="col ambar">80%</td>
+                    <td class="col ambar">80%</td>
+                    <td class="col ambar">80%</td>
+                    <td class="col ambar">80%</td>
+                    <td class="col ambar">80%</td>
+                    <td class="col ambar">80%</td>
+                </tr>
+                <tr class="fila">
+                    <td class="col green">12%</td>
+                    <td class="col green">32%</td>
+                    <td class="col green">40%</td>
+                    <td class="col green">35%</td>
+                    <td class="col green">33%</td>
+                    <td class="col green">29%</td>
+                </tr>
+                <tr class="fila">
+                    <td class="col green">27%</td>
+                    <td class="col green">33%</td>
+                    <td class="col green">45%</td>
+                    <td class="col green">30%</td>
+                    <td class="col green">22%</td>
+                    <td class="col green">40%</td>
+                </tr>
+               
+            </table>
+                <H2>ENTRANCE</H2>
+            
+        </div>  
+        <div class="section" id="s2">
+            <h2 class="title" >REPORT</h2>
+            <form action="index.html" class="section-content form">
+                <div class="form-section">
+                    <label>Name: </label>
+                    <select>
+                        <option value="Eugenia">Eugenia</option>
+                        <option value="Juan">Juan</option>
+                        <option value="Ines">Ines</option>
+                    </select>
+                </div>
+                <div class="form-section">
+                    <label>Department: </label>
+                    <div class="checkbox-container">
+                        <input type="checkbox"><span>1</span>
+                        <input type="checkbox"><span>2</span>
+                        <input type="checkbox"><span>3</span>
+                    </div>
+                </div>
+                <div class="form-section">
+                    <textarea class="textarea" placeholder="Description"></textarea>
+                </div>
+                <div class="form-button">
+                    <button onclick="Alert()">SEND</button>
+                </div>
+            </form>
+        </div>  
+        <div class="section" id="s3">
+            <h2 class="title">REMINDERS</h2>
+            <div class="muro">
+                <table class="news" >
+                    <tr class="fila">
+                        <td class="col1" id="n1" >CHANGES IN GREENGROCER</td>
+                    </tr>
+                    <tr class="fila">
+                        <td class="col1" id="n2">IMPORTANT NOTICES</td>
+                    </tr>
+                    <tr class="fila">
+                        <td class="col1" id="n3">WELLCOME TO ANALYTICS INSIDERS</td>
+                    </tr>
+                </table>
+            </div>
+
+        <div id="popup1" class="popup">
+        <div class="popup-content">
+                <span class="close">&times;</span>
+                <p>To all personnel</p><br>
+                <p>Once again, I&nbsp;am distributing a circular but before the news, I should just like to thank you for your valuable collaboration, vital for the sale of our products and the success of the company.</p>
+                <p>The reason we are getting in touch with you all is to let you know that as from March, our Seville representative, Felipe Jim&eacute;nez, is leaving Frutop&iacute;a. We should like to offer him our thanks for all the hard work he has put in over all this time and wish him all the very best for the future. Likewise, Felipe is keen to transmit his thanks for the help and collaboration from Frutop&iacute;a staff.</p><br>
+                <p>So, as we say farewell to Felipe, I am happy to announce the nomination of MAR&Iacute;A CANTARRANAS as the new Seville representative. Mar&iacute;a has a wide experience in the field of business and will continue in a similar vein as Felipe. You can reach her for whatever information and help you may need on Tel: (91) 654 6858. The complete address is:</p><br>
+                <p>Marquesado de Sta. Marta, 1. 28027 MADRID. Spain</p><br>
+                <p>I remind you that for any query or comment you may have, please do not hesitate to contact me. Lastly, I should like to offer you my best wishes for the new year.</p><br>
+                <p>Pedro Paniagua</p>
+            </div>
+        </div>  
+        <div id="popup2" class="popup">
+            <div class="popup-content">
+                    <span class="close">&times;</span>
+                    <p>Here is an example of a dashboard:</p><br>
+                    <img src="img/Dashboard.png" width="100%">
+                </div>
+            </div>  
+            <div id="popup3" class="popup">
+                <div class="popup-content">
+                        <span class="close">&times;</span>
+                        <p>To all personnel</p><br>
+                        <p>Once again, I&nbsp;am distributing a circular but before the news, I should just like to thank you for your valuable collaboration, vital for the sale of our products and the success of the company.</p>
+                        <p>I am writing to inform you about the new camera implementation carried out by Analytics Insiders. These changes will allow us to know all kinds of valuable information from our physical stores in real time. Therefore, we would like to hear from you about any difficulties you may encounter during this new phase.</p><br>
+                        <p>I remind you that for any query or comment you may have, please do not hesitate to contact me. Lastly, I should like to offer you my best wishes for the new year.</p><br>
+                        <p>Pedro Paniagua</p>
+                    </div>
+                </div>  
+    </div>
+    <script src="js/function.js"></script>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="js/Capacityevolution.js"></script>
+    <script type="text/javascript" src="js/news.js"></script>
+    <script type="text/javascript" src="js/FormFulfilled.js"></script>
+    
+</body>
+</html>
